@@ -30,6 +30,12 @@ body {
   line-height: 48px;
 }
 
+.title_bold {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 56px;
+}
+
 .profile_btn {
   background-color: #F2CDCE;
   border-radius: 4px;
@@ -70,6 +76,10 @@ body {
     font-size: 30px;
     line-height: 36px;
   }
+  .title_bold {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 /*------*/
@@ -80,6 +90,10 @@ body {
   .title {
     font-size: 24px;
     line-height: 26px;
+  }
+  .title_bold {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
