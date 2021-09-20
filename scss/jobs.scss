@@ -29,65 +29,65 @@
       box-shadow: inset 0 0 300px #124E3B;
     }
   }
-}
-
-.slider {
-  position: relative;
-  margin-bottom: 80px;
-  display: none;
-  &.active {
-    display: block;
-  }
-  &__item {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    min-height: 320px;
-    width: 280px;
-    margin: 0 50px;
-  }
-  &__img_wrapper, &__inscription, &__price {
-    display: inline-block;
-    text-align: center;
-  }
-  &__img_wrapper {
-    margin-bottom: 30px;
-  }
-  &__img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  &__inscription {
-    font-size: 16px;
-    line-height: 16px;
-    color: #757478;
-    margin-bottom: 10px;
-  }
-  &__price {
-    font-size: 36px;
-    line-height: 36px;
-    color: #3C3B3D;
-    margin-bottom: 30px;
-  }
-  .slick-arrow {
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-  }
-  .slick-arrow.slick-prev {
-    left: 37%;
-    background: url("../images/left_arrow.svg") no-repeat center center;
-    background-size: cover;
-    font-size: 0;
-  }
-  .slick-arrow.slick-next {
-    right: 37%;
-    background: url("../images/right_arrow.svg") no-repeat center center;
-    background-size: cover;
-    font-size: 0;
+  .slider {
+    position: relative;
+    margin-bottom: 80px;
+    display: none;
+    &.active {
+      display: block;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      min-height: 320px;
+      width: 280px;
+      margin: 0 50px;
+    }
+    &__img_wrapper, &__inscription, &__price {
+      display: inline-block;
+      text-align: center;
+    }
+    &__img_wrapper {
+      margin-bottom: 30px;
+    }
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &__inscription {
+      font-size: 16px;
+      line-height: 16px;
+      color: #757478;
+      margin-bottom: 10px;
+    }
+    &__price {
+      font-size: 36px;
+      line-height: 36px;
+      color: #3C3B3D;
+      margin-bottom: 30px;
+    }
+    .slick-arrow {
+      z-index: 0;
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+    }
+    .slick-arrow.slick-prev {
+      z-index: 1;
+      left: 37%;
+      background: url("../images/left_arrow.svg") no-repeat center center;
+      background-size: cover;
+      font-size: 0;
+    }
+    .slick-arrow.slick-next {
+      right: 37%;
+      background: url("../images/right_arrow.svg") no-repeat center center;
+      background-size: cover;
+      font-size: 0;
+    }
   }
 }
 
@@ -98,14 +98,14 @@
     &__title {
       margin-bottom: 70px;
     }
-  }
-  .slider {
-    margin-bottom: 70px;
-    .slick-arrow.slick-prev {
-      left: 32%;
-    }
-    .slick-arrow.slick-next {
-      right: 32%;
+    .slider {
+      margin-bottom: 70px;
+      .slick-arrow.slick-prev {
+        left: 32%;
+      }
+      .slick-arrow.slick-next {
+        right: 32%;
+      }
     }
   }
 }
@@ -122,14 +122,14 @@
     &__tabs {
       margin-bottom: 60px;
     }
-  }
-  .slider {
-    margin-bottom: 60px;
-    .slick-arrow.slick-prev {
-      left: 28%;
-    }
-    .slick-arrow.slick-next {
-      right: 28%;
+    .slider {
+      margin-bottom: 60px;
+      .slick-arrow.slick-prev {
+        left: 28%;
+      }
+      .slick-arrow.slick-next {
+        right: 28%;
+      }
     }
   }
 }
@@ -150,26 +150,26 @@
     &__tab {
       padding: 10px 70px;
     }
-  }
-  .slider {
-    margin-bottom: 40px;
-    .slick-dots {
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .slick-active {
-        border: 2px solid #000000;
-      }
-      li {
-        margin: 0 10px;
-        width: 15px;
-        height: 15px;
-        background-color: #F2CDCE;
-        border-radius: 50%;
+    .slider {
+      margin-bottom: 40px;
+      .slick-dots {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .slick-active {
+          border: 2px solid #000000;
         }
-      button {
-        font-size: 0;
+        li {
+          margin: 0 10px;
+          width: 15px;
+          height: 15px;
+          background-color: #F2CDCE;
+          border-radius: 50%;
+        }
+        button {
+          font-size: 0;
+        }
       }
     }
   }

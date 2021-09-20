@@ -38,7 +38,7 @@ $(function () {
     $('.jobs__slider').slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 600,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
@@ -51,6 +51,22 @@ $(function () {
                     slidesToShow: 1
                 }
             }
+    ]
+    });
+
+    $('.partners__slider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        responsive: [
+        {
+            breakpoint: 568,
+            settings: {
+                arrows:false,
+            }
+        }
     ]
     });
 
