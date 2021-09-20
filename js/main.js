@@ -34,4 +34,39 @@ $(function () {
             menuArrow.parentElement.classList.remove('active')
         };
     })
+
+    $('.jobs__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    arrows:false,
+                    dots: true,
+                    slidesToShow: 1
+                }
+            }
+    ]
+    });
+
+    const tab = document.querySelectorAll('.jobs__tab');
+    const slider = document.querySelectorAll('.slider');
+
+    tab.forEach(function (item) {
+        item.addEventListener('click', function () {
+            tab.forEach(function (item) {
+                item.classList.remove('active')
+            })
+            slider.forEach(function (item) {
+                item.classList.toggle('active')
+            })
+
+            item.classList.add('active')
+        })
+    })
 })

@@ -45,8 +45,8 @@ body {
   &:after {
     position: absolute;
     right: 5%;
-    top: 30%;
-    transform: translate(-30%, 0) rotate(-45deg);
+    top: 40%;
+    transform: translate(-40%, 0) rotate(-45deg);
     content: '';
     border: solid #000000;
     border-width: 0 3px 3px 0;
@@ -56,6 +56,13 @@ body {
   &:hover {
     opacity: 0.8;
   }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
 }
 
 /*1024px*/
