@@ -1,0 +1,157 @@
+.suggestions {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__tabs {
+    display: flex;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    background-color: #F0EDF5;
+  }
+  &__tab {
+    display: inline-block;
+    padding: 10px 90px;
+    box-shadow: inset 0 0 0 0 #124E3B;
+    color: #000000;
+    border-radius: 20px;
+    transition: .2s;
+    &.active {
+      color: #ffffff;
+      box-shadow: inset 0 0 300px #124E3B;
+    }
+  }
+  .tabs {
+    &__box {
+      display: none;
+      animation: tab_opacity .5s;
+    }
+    &__box.active {
+      display: block;
+    }
+    @keyframes tab_opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    &__box_wrapper {
+      display: flex;
+    }
+    &__list {
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__box_subtitle {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    &__box_item {
+      list-style: circle;
+      margin: 3px 0 3px 16px;
+    }
+  }
+}
+
+/*---1200px---*/
+
+@media (max-width: 1200px) {
+  .suggestions {
+    &__title {
+      margin-bottom: 70px;
+    }
+    &__tab {
+      padding: 10px 70px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---910px---*/
+
+@media (max-width: 910px) {
+  .suggestions {
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__tabs {
+      margin-bottom: 50px;
+    }
+    &__tab {
+      padding: 9px 54px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---768px---*/
+
+@media (max-width: 768px) {
+  .suggestions {
+    padding: 80px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__tabs {
+      margin-bottom: 40px;
+    }
+    &__tab {
+      padding: 9px 45px;
+    }
+    .tabs {
+      &__list {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+/*------------*/
+
+/*---568px---*/
+
+@media (max-width: 568px) {
+  .suggestions {
+    padding: 50px 0;
+    &__tabs {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__tab {
+      padding: 10px;
+    }
+    .tabs {
+      &__box_wrapper {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+/*------------*/
+
+/*---426px---*/
+
+@media (max-width: 426px) {
+  .suggestions {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__tabs {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*------------*/

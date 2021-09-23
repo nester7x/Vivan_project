@@ -169,17 +169,19 @@
     </div>
 
     <section class="jobs">
-      <div class="jobs__inner">
+      <div class="container">
+        <div class="jobs__inner">
 
-        <h3 class="title_bold jobs__title">
-          Jobs for every healthcare professional
-        </h3>
+          <h3 class="title_bold jobs__title">
+            Jobs for every healthcare professional
+          </h3>
 
-        <div class="jobs__tabs">
-          <p class="jobs__tab active">Travel</p>
-          <p class="jobs__tab">Permanent</p>
+          <div class="jobs__tabs">
+            <button class="jobs__tab active" data-tab="#travel">Travel</button>
+            <button class="jobs__tab" data-tab="#permanent">Permanent</button>
+          </div>
+
         </div>
-
       </div>
 
       <div class="jobs__sliders">
@@ -270,8 +272,10 @@
         </div>
       </div>
 
-      <div class="jobs__inner">
-        <a class="profile_btn jobs__btn" href="#">More Locations</a>
+      <div class="container">
+        <div class="jobs__inner">
+          <a class="profile_btn jobs__btn" href="#">More Locations</a>
+        </div>
       </div>
     </section>
 
@@ -443,53 +447,55 @@
       <div class="container">
         <div class="suggestions__inner">
 
-          <h3 class="title suggestions__title">
+          <h3 class="title_bold suggestions__title">
             Explore top healthcare jobs
           </h3>
 
-          <div class="suggestions__content">
-            <div class="tabs suggestions__tabs">
-              <a class="suggestions__tab" href="#suggestion_1">Specialties</a>
-              <a class="suggestions__tab" href="#suggestion_2">Locations</a>
-              <a class="suggestions__tab" href="#suggestion_3">Agencies</a>
-              <a class="suggestions__tab" href="#suggestion_4">Popular Searches</a>
+          <div class="tabs suggestions__tabs">
+            <button class="suggestions__tab active" data-tab="#suggestion_1">Specialties</button>
+            <button class="suggestions__tab" data-tab="#suggestion_2">Locations</button>
+            <button class="suggestions__tab" data-tab="#suggestion_3">Agencies</button>
+            <button class="suggestions__tab" data-tab="#suggestion_4">Popular Searches</button>
+          </div>
+
+          <div class="tabs__boxes">
+            <div class="tabs__box active" id="suggestion_1">
+              <div class="tabs__box_wrapper">
+                <ul class="tabs__list">
+                  <li class="tabs__box_subtitle">Travel Nursing</li>
+                  <li class="tabs__box_item">Med Surg (23329 jobs)</li>
+                  <li class="tabs__box_item">ED Nurse (18972 jobs)</li>
+                  <li class="tabs__box_item">ICU Nurse (18404 jobs)</li>
+                  <li class="tabs__box_subtitle">Allied Health</li>
+                  <li class="tabs__box_item">Registered Respiratory Therapist (8370 jobs)</li>
+                  <li class="tabs__box_item">Respiratory Therapist (8322 jobs)</li>
+                  <li class="tabs__box_item">Laboratory Technician (3841 jobs)</li>
+                </ul>
+
+                <ul class="tabs__list">
+                  <li class="tabs__box_subtitle">Therapy</li>
+                  <li class="tabs__box_item">Physical Therapist (3417 jobs)</li>
+                  <li class="tabs__box_item">SLP (1641 jobs)</li>
+                  <li class="tabs__box_item">Occupational Therapist (1105 jobs)</li>
+                  <li class="tabs__box_subtitle">LPN / LVN</li>
+                  <li class="tabs__box_item">Long Term Care LPN (293 jobs)</li>
+                  <li class="tabs__box_item">Home Health LPN (209 jobs)</li>
+                  <li class="tabs__box_item">Med Surg LPN (128 jobs)</li>
+                </ul>
+
+                <ul class="tabs__list">
+                  <li class="tabs__box_subtitle">CNA</li>
+                  <li class="tabs__box_item">CNA (265 jobs)</li>
+                  <li class="tabs__box_item">Long Term Care CNA (150 jobs)</li>
+                  <li class="tabs__box_subtitle">School Services</li>
+                  <li class="tabs__box_item">School Psychologist (42 jobs)</li>
+                  <li class="tabs__box_item">Special Education Teacher (24 jobs)</li>
+                  <li class="tabs__box_item">Licensed Clinical Social Worker (22 jobs)</li>
+                </ul>
+              </div>
             </div>
-
-            <div class="tabs__boxes">
-              <div class="tabs__box" id="suggestion_1">
-                <ul class="tabs__list">
-                  <li class="tabs__box_subtitle">Travel Nursing</li>
-                  <li class="tabs__box_item">Med Surg (23329 jobs)</li>
-                  <li class="tabs__box_item">ED Nurse (18972 jobs)</li>
-                  <li class="tabs__box_item">ICU Nurse (18404 jobs)</li>
-                  <li class="tabs__box_subtitle">Allied Health</li>
-                  <li class="tabs__box_item">Registered Respiratory Therapist (8370 jobs)</li>
-                  <li class="tabs__box_item">Respiratory Therapist (8322 jobs)</li>
-                  <li class="tabs__box_item">Laboratory Technician (3841 jobs)</li>
-                </ul>
-
-                <ul class="tabs__list">
-                  <li class="tabs__box_subtitle">Therapy</li>
-                  <li class="tabs__box_item">Physical Therapist (3417 jobs)</li>
-                  <li class="tabs__box_item">SLP (1641 jobs)</li>
-                  <li class="tabs__box_item">Occupational Therapist (1105 jobs)</li>
-                  <li class="tabs__box_subtitle">LPN / LVN</li>
-                  <li class="tabs__box_item">Long Term Care LPN (293 jobs)</li>
-                  <li class="tabs__box_item">Home Health LPN (209 jobs)</li>
-                  <li class="tabs__box_item">Med Surg LPN (128 jobs)</li>
-                </ul>
-
-                <ul class="tabs__list">
-                  <li class="tabs__box_subtitle">CNA</li>
-                  <li class="tabs__box_item">CNA (265 jobs)</li>
-                  <li class="tabs__box_item">Long Term Care CNA (150 jobs)</li>
-                  <li class="tabs__box_subtitle">School Services</li>
-                  <li class="tabs__box_item">School Psychologist (42 jobs)</li>
-                  <li class="tabs__box_item">Special Education Teacher (24 jobs)</li>
-                  <li class="tabs__box_item">Licensed Clinical Social Worker (22 jobs)</li>
-                </ul>
-              </div>
-              <div class="tabs__box" id="suggestion_2">
+            <div class="tabs__box" id="suggestion_2">
+              <div class="tabs__box_wrapper">
                 <ul class="tabs__list">
                   <li class="tabs__box_subtitle">Travel Nursing</li>
                   <li class="tabs__box_item">Med Surg (23329 jobs)</li>
@@ -522,7 +528,9 @@
                   <li class="tabs__box_item">Med Surg LPN (128 jobs)</li>
                 </ul>
               </div>
-              <div class="tabs__box" id="suggestion_3">
+            </div>
+            <div class="tabs__box" id="suggestion_3">
+              <div class="tabs__box_wrapper">
                 <ul class="tabs__list">
                   <li class="tabs__box_subtitle">Therapy</li>
                   <li class="tabs__box_item">Physical Therapist (3417 jobs)</li>
@@ -555,7 +563,9 @@
                   <li class="tabs__box_item">Laboratory Technician (3841 jobs)</li>
                 </ul>
               </div>
-              <div class="tabs__box" id="suggestion_4">
+            </div>
+            <div class="tabs__box" id="suggestion_4">
+              <div class="tabs__box_wrapper">
                 <ul class="tabs__list">
                   <li class="tabs__box_subtitle">Travel Nursing</li>
                   <li class="tabs__box_item">Med Surg (23329 jobs)</li>

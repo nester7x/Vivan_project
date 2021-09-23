@@ -180,29 +180,16 @@
 /*---568px---*/
 
 @media (max-width: 568px) {
-.jobs {
-  padding: 50px;
-  &__tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-  &__tab {
-    padding: 10px 50px;
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
-  }
-}
-}
-
-/*------------*/
-
-/*---426px---*/
-
-@media (max-width: 426px) {
   .jobs {
+    padding: 50px 0;
+    &__tabs {
+      width: 100%;
+      flex-direction: column;
+    }
     &__tab {
-      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
     }
   }
 }
