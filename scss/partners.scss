@@ -1,6 +1,7 @@
-.partners {
+.partners, .channels {
   padding: 80px 0;
   &__title {
+    font-weight: bold;
     text-align: center;
     margin-bottom: 80px;
   }
@@ -18,7 +19,7 @@
 /*---910px---*/
 
 @media (max-width: 910px) {
-  .partners {
+  .partners, .channels {
     padding: 60px 0;
     &__title {
       margin-bottom: 60px;
@@ -31,7 +32,7 @@
 /*---768px---*/
 
 @media (max-width: 768px) {
-  .partners {
+  .partners, .channels {
     padding: 40px 0;
     &__title {
       margin-bottom: 40px;
@@ -44,7 +45,7 @@
 /*---426px---*/
 
 @media (max-width: 426px) {
-  .partners {
+  .partners, .channels {
     padding: 20px 0;
     &__title {
       margin-bottom: 30px;
