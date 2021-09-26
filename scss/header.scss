@@ -35,6 +35,9 @@
 }
 .logo {
   margin: 0 5px 0 0;
+  &__img {
+    object-fit: cover;
+  }
 }
 .menu {
   &__item {

@@ -17,7 +17,7 @@
   }
   &__info {
     background-color: #124E3B;
-    padding: 30px 90px;
+    padding: 50px 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@
     margin-bottom: 15px;
     &:after {
       position: absolute;
-      top: -25%;
+      top: -10%;
       left: 0;
       content: '""';
       font-size: 70px;
@@ -55,9 +55,13 @@
       min-height: 660px;
     }
     &__info {
-      padding: 30px 70px;
+      padding: 50px 70px;
     }
-
+    &__info-text {
+      &:after {
+        top: -3%;
+      }
+    }
   }
 }
 
@@ -71,7 +75,7 @@
       min-height: 600px;
     }
     &__info {
-      padding: 20px 50px;
+      padding: 50px;
       span {
         font-size: 18px;
         line-height: 24px;
@@ -82,7 +86,6 @@
       font-size: 30px;
       line-height: 40px;
       &:after {
-        top: -10%;
         font-size: 50px;
       }
     }
@@ -99,7 +102,7 @@
       min-height: 500px;
     }
     &__info {
-      padding: 20px 30px;
+      padding: 30px;
       span {
         margin-bottom: 20px;
       }
@@ -107,9 +110,6 @@
     &__info-text {
       font-size: 28px;
       line-height: 30px;
-      &:after {
-        top: -15%;
-      }
     }
   }
 }
@@ -135,7 +135,6 @@
       font-size: 20px;
       line-height: 36px;
       &:after {
-        top: -15%;
         font-size: 30px;
       }
     }
