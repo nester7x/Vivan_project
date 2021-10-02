@@ -1,7 +1,8 @@
 body {
-  overflow-x: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
+  overflow-x: hidden;
   font-size: 16px;
   line-height: 24px;
   color: #3C3B3D;
@@ -33,7 +34,8 @@ body {
 }
 
 .title_bold {
-  font-weight: bold;
+  font-family: 'Roboto-Bold', Arial, sans-serif;
+  font-weight: 700;
   font-size: 44px;
   line-height: 56px;
 }
